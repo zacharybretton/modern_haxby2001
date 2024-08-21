@@ -4,7 +4,7 @@ This project revisits the seminal study by [Haxby et al. (2001)](https://www.sci
 
 ## Key Areas of Exploration
 
-- **Data Visualization:** Visualize the structure and function of fMRI data, and understand how brain regions respond to different visual stimuli.
+- **Data Visualization:** Visualize the structure and function of fMRI data, understanding the type of data we are working with.
 - **Masking Techniques:** Apply and visualize masks to focus analyses on specific brain regions, such as the ventral temporal cortex, which is critical for visual processing.
 - **Feature Selection and Modeling:** Implement feature selection using ANOVA F-tests to identify the most explanatory voxels and then classify visual categories using logistic regression and XGBoost.
 - **MVPA Analysis:** Decode patterns of brain activity associated with different visual categories using multivariate pattern analysis (MVPA).
@@ -36,6 +36,6 @@ This project illustrates the power of modern machine learning techniques in repl
 To run this project, clone the repository and execute the Jupyter Notebook. Ensure that all required Python libraries are installed, including `scikit-learn`, `xgboost`, `nilearn`, and `seaborn`.
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/zacharybretton/modern_haxby2001
+cd modern_haxby2001
 jupyter notebook
