@@ -33,6 +33,12 @@ This project is divided into several key components:
 
 This project illustrates the power of modern machine learning techniques in replicating and expanding upon classic neuroscience findings. By integrating XGBoost with traditional approaches, we not only replicate Haxby's key insights but also showcase how advanced methods can be used to possibly further our understanding of distributed representations in the brain.
 
+## Running the Analysis
+
+### Notebook Overview
+
+All code, analysis, and results are contained within the `notebook.ipynb` file. This Jupyter Notebook includes all the steps required to replicate the analysis, from data loading and preprocessing to model training and evaluation. The notebook is self-contained, with all intermediate results saved within the notebook itself. You can re-run any part of the notebook as needed to reproduce the results or explore the data further.
+
 ## Environment Setup
 
 To run this project, you'll need to set up the environment using the provided `environment.yml` or `requirements.txt` files. This ensures that all necessary dependencies are correctly installed.
