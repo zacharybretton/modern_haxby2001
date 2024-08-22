@@ -23,7 +23,7 @@ This project is divided into several key components:
 
 3. **Feature Selection and Classification**: 
    - **L2 Logistic Regression**: Implemented with ANOVA-based feature selection, using leave-one-run-out cross-validation to assess model performance.
-   - **XGBoost**: Applied with feature selection to classify visual categories, comparing its performance to logistic regression.
+   - **XGBoost**: Applied to classify visual categories with hyperparameter tuning, comparing its performance to logistic regression.
 
 4. **Voxel Exclusion and Analysis**: We explore how removing the top explanatory voxels affects classification accuracy, reinforcing the distributed nature of brain representations.
 
