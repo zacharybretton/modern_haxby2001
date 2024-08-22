@@ -29,10 +29,6 @@ This project is divided into several key components:
 
 5. **Results and Comparisons**: Confusion matrices, ROC curves, and AUC scores are generated to evaluate and compare the performance of different models and approaches.
 
-## Conclusion
-
-This project illustrates the power of modern machine learning techniques in replicating and expanding upon classic neuroscience findings. By integrating XGBoost with traditional approaches, we not only replicate Haxby's key insights but also showcase how advanced methods can be used to possibly further our understanding of distributed representations in the brain.
-
 ## Running the Analysis
 
 ### Notebook Overview
