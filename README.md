@@ -2,6 +2,8 @@
 
 This project revisits the seminal study by [Haxby et al. (2001)](https://www.science.org/doi/10.1126/science.1063736?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed), which demonstrated that distributed patterns of brain activity encode information about visual stimuli. Utilizing contemporary machine learning techniques, this project replicates and extends Haxby's original findings by implementing both traditional L2-regularized logistic regression and advanced XGBoost classifiers.
 
+![Top 100 Important Voxels](voxel_image.png)
+
 ## Key Areas of Exploration
 
 - **Data Visualization:** Visualize the structure and function of fMRI data, understanding the type of data we are working with.
@@ -20,7 +22,7 @@ This project is divided into several key components:
 2. **Preprocessing and Z-Scoring**: Data is preprocessed to account for drift in the BOLD signal, with z-scoring applied separately within each run to standardize the data.
 
 3. **Feature Selection and Classification**: 
-   - **L2 Logistic Regression**: Implemented with ANOVA based feature selection, using leave-one-run-out cross-validation to assess model performance.
+   - **L2 Logistic Regression**: Implemented with ANOVA-based feature selection, using leave-one-run-out cross-validation to assess model performance.
    - **XGBoost**: Applied with feature selection to classify visual categories, comparing its performance to logistic regression.
 
 4. **Voxel Exclusion and Analysis**: We explore how removing the top explanatory voxels affects classification accuracy, reinforcing the distributed nature of brain representations.
@@ -31,11 +33,31 @@ This project is divided into several key components:
 
 This project illustrates the power of modern machine learning techniques in replicating and expanding upon classic neuroscience findings. By integrating XGBoost with traditional approaches, we not only replicate Haxby's key insights but also showcase how advanced methods can be used to possibly further our understanding of distributed representations in the brain.
 
-## Usage
+## Environment Setup
 
-To run this project, clone the repository and execute the Jupyter Notebook. Ensure that all required Python libraries are installed, including `scikit-learn`, `xgboost`, `nilearn`, and `seaborn`.
+To run this project, you'll need to set up the environment using the provided `environment.yml` or `requirements.txt` files. This ensures that all necessary dependencies are correctly installed.
 
+### Using Conda
+
+To create the environment using Conda, run:
+
+```bash
+conda env create -f environment.yml
+conda activate modern_haxby2001
+```
+
+### Using Pip
+
+Alternatively, you can set up the environment using pip:
+```bash
+pip install -r requirements.txt
+```
+
+### Usage
+
+To run this project, clone the repository and execute the Jupyter Notebook. Ensure that all required Python libraries are installed, including `scikit-learn`, `xgboost`, `nilearn`, `numpy`, `scipy` and `seaborn`.
 ```bash
 git clone https://github.com/zacharybretton/modern_haxby2001
 cd modern_haxby2001
 jupyter notebook
+```
